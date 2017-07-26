@@ -1,0 +1,19 @@
+server:
+ port: 9000
+
+searcherservice:
+  ribbon:  
+    listOfServers: localhost:8050,localhost:8051,localhost:8052
+    ServerListRefreshInterval: 15000 
+    
+crawlerservice:
+  ribbon:  
+    listOfServers: localhost:8070,localhost:8071,localhost:8072
+    ServerListRefreshInterval: 15000 
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.23.239.153:8761/eureka/
+  instance:
+    prefer-ip-address: true      

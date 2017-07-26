@@ -1,0 +1,17 @@
+apiurl:
+  http://words.bighugelabs.com/api/2/ee711d3b12c5ba4961808c6a5084d24a/
+spring:
+ data:
+  neo4j:
+   uri: http://172.23.239.174:7474
+   username: neo4j
+   password: root123
+server:
+  port: 8090
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.23.239.153:8761/eureka/
+  instance:
+    prefer-ip-address: true 
+   

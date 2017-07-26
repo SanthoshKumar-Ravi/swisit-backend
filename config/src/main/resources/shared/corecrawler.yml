@@ -1,0 +1,12 @@
+brokerid: 172.23.239.165:9092
+topic-fromconsumer: testcontrol
+topic-toproducer: todocumentparser
+server:
+  port: 8060
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.23.239.153:8761/eureka/
+  instance:
+    prefer-ip-address: true  
